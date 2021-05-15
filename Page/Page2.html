@@ -1,10 +1,190 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>分頁2</title>
+        <title>Minecraft伺服器架設教學</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            .bg
+            {
+                background-attachment: fixed;
+                background-size: cover;
+                background-image: url('https://www.teahub.io/photos/full/24-243115_minecraft-.png');
+            }
+            .nav
+            {
+                background-size: cover;
+                background-image: url('https://www.teahub.io/photos/full/24-243115_minecraft-.png');
+            }
+            .bold
+            {
+                font-weight: bold;
+            }
+        </style>
     </head>
-    <body>
-        分頁2
+    <body class="bg">
+        <div class="nav w3-top w3-bar w3-xlarge w3-text-white">
+            <div class="w3-bar-item w3-button w3-hover-none w3-hover-text-white" onclick="window.location.href='#java';">下載Java</div>
+            <div class="w3-bar-item w3-button w3-hover-none w3-hover-text-white" onclick="window.location.href='#server';">下載server檔</div>
+            <div class="w3-bar-item w3-button w3-hover-none w3-hover-text-white" onclick="window.location.href='#startServer';">開始使用server檔</div>
+            <div class="w3-bar-item w3-button w3-hover-none w3-hover-text-white" onclick="window.location.href='#hamachi';">下載hamachi</div>
+            <div class="w3-bar-item w3-button w3-hover-none w3-hover-text-white" onclick="window.location.href='#connectServer';">連上伺服器</div>
+            <div class="w3-right w3-bar-item w3-button w3-hover-none w3-hover-text-white" onclick="window.location.href='../HomePage.html';">回首頁</div>
+        </div>
+        <div class="w3-margin w3-center w3-xxlarge w3-text-white">
+            <div>
+                <br><br><br>
+                <img src="https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/header/logo.png"><br>
+                <div class="w3-xxxlarge bold">伺服器架設教學</div><br>
+                <br>
+                絕對比想像中簡單<br>
+                只要應用Minecrafte官方提供的<br>
+                server檔就可以輕鬆完成<br>
+                <br><br><br id="java">
+            </div>
+            <!--Download Java-->
+            <div class="w3-xxxlarge bold">
+                第一步<br>
+                下載Java<br>
+            </div>
+            <hr class="w3-border w3-border-white">
+            若是原本電腦沒有java，無法運行Minecraft官網提供的server檔<br>
+            或是運行了server檔之後記憶體不夠導致當機<br>
+            就須要下載java，防止記憶體不夠用最好下載64位元的<br>
+            如何轉換32位元與64位元的java，以下網站內都有答案<br>
+            <img src="image/minecraft server/20210515_095758.jpg" style="max-width: 25vw;"><br>
+            <a href="https://java.com/zh-TW/download/manual.jsp" target="_blank">https://java.com/zh-TW/download/manual.jsp</a><br>
+            <br><br><br id="server">
+            <!--Download Server-->
+            <div class="w3-xxxlarge bold">
+                第二步<br>
+                下載官方server檔<br>
+            </div>
+            <hr class="w3-border w3-border-white">
+            官方server檔可以自行搜索Minecraft官網<br>
+            或是網路上別人轉載的連節取得<br>
+            〈以下提供最方便的網站〉<br>
+            〈請挑選你想玩的Minecraft版本來下載,如1.16.5〉<br>
+            <img src="image/minecraft server/20210515_095211_mh1621043595201.jpg" style="max-width: 25vw;"><br>
+            <a href="https://home.gamer.com.tw/creationDetail.php?sn=3630027" target="_blank">https://home.gamer.com.tw/creationDetail.php?sn=3630027</a><br>
+            <br><br><br id="startServer">
+            <!--Use Server-->
+            <div class="w3-xxxlarge bold">
+                第三步<br>
+                開始使用server檔<br>
+            </div>
+            <hr class="w3-border w3-border-white">
+            <div class="w3-row">
+                <div style="width: 50%;float: left;">
+                    下載後會得到一個server檔<br>
+                    把它放在你想放的路徑<br>
+                    <img src="image/minecraft server/20210515_101500_mh1621045317097.jpg" style="max-width: 25vw;">
+                </div>
+                <div style="width: 50%;float: right;">
+                    然後把它放進新增的資料夾內<br>
+                    <br>
+                    <img src="image/minecraft server/20210515_101541_mh1621045352585.jpg" style="max-width: 25vw;">
+                </div>
+            </div>
+            <br><br>
+            <div class="w3-row">
+                <div style="width: 50%;float: left;">
+                    然後在資料夾內執行server檔<br>
+                    <img src="image/minecraft server/20210515_101611.jpg" style="max-width: 25vw;">
+                </div>
+                <div style="width: 50%;float: right;">
+                    執行後會產生各種檔案<br>
+                    <img src="image/minecraft server/20210515_101643.jpg" style="max-width: 25vw;">
+                </div>
+            </div>
+            <br><br>
+            <div class="w3-row">
+                <div style="width: 33%;float: left;">
+                    點選eula檔<br>
+                    <img src="image/minecraft server/20210515_101658.jpg" style="max-width: 25vw;">
+                </div>
+                <div style="width: 33%;float: right;">
+                    來代表你同意官方的eula<br>
+                    <img src="image/minecraft server/20210515_101736.jpg" style="max-width: 25vw;">
+                </div>
+                <div style="width: 34%;float: right;">
+                    將第三行的false改成true<br>
+                    <img src="image/minecraft server/20210515_101708.jpg" style="max-width: 25vw;">
+                </div>
+            </div>
+            <br>
+            然後再執行一次server檔，就會跑出伺服器管理平台了!<br>
+            等到它跑出Done!，就代表伺服器開好了<br>
+            你的資料夾也會出現一個叫world的檔案<br>
+            也就是這個伺服器的Mincraft地圖檔<br>
+            <img src="image/minecraft server/20210515_101854_mh1621046097626.jpg" style="max-width: 75%;">
+            <br><br><br id="hamachi">
+            <!--Download Hamachi-->
+            <div class="w3-xxxlarge bold">
+                第四步<br>
+                下載hamachi<br>
+            </div>
+            <hr class="w3-border w3-border-white">
+            為了要讓你的朋友們連進你的伺服器<br>
+            你和你的朋友們需要下載hamachi這個軟體<br>
+            <br>
+            在這之前請先弄清楚您的電腦的IP是不是固定IP<br>
+            若是固定IP就請直接跳到下一步<br>
+            不確定也沒關係，就直接下載hamachi吧！<br>
+            <br>
+            到以下網址下載後，直接執行然後同意條款跟一直按下一步<br>
+            <a href="https://www.vpn.net/" target="_blank">https://www.vpn.net/</a>
+            <div class="w3-row">
+                <div style="width: 50%;float: left;">
+                    <img src="image/minecraft server/20210515_103020.jpg" style="max-width: 25vw;">
+                </div>
+                <div style="width: 50%;float: right;">
+                    <img src="image/minecraft server/20210515_103143.jpg" style="max-width: 25vw;">
+                </div>
+            </div>
+            <br>
+            等下載完執行hamachi<br>
+            然後建立一個新網路<br>
+            <div class="w3-row">
+                <div style="width: 50%;float: left;">
+                    伺服器主人建立新網路<br>
+                    而你的朋友們選加入網路<br>
+                    <img src="image/minecraft server/20210514_230712_mh1621043568908.jpg" style="max-width: 25vw;">
+                </div>
+                <div style="width: 50%;float: right;">
+                    然後自己定一個網路的Id和密碼<br>
+                    你的朋友們在加入網路時就輸入這個Id和密碼<br>
+                    <img src="image/minecraft server/20210515_112954_mh1621049430299.jpg" style="max-width: 25vw;">
+                </div>
+            </div>
+            <br><br><br id="connectServer">
+            <!--Connect Server-->
+            <div class="w3-xxxlarge bold">
+                第五步<br>
+                連上伺服器<br>
+            </div>
+            <hr class="w3-border w3-border-white">
+            確定你的朋友們都連上hamachi且伺服器也開著〈server檔〉<br>
+            你們就可以打開Minecraft然後連上伺服器一起玩了!<br>
+            <br>
+            你的伺服器ip位址就是你的電腦ipv4位址<br>
+            在你的hamachi左上也就是馬賽克處會顯示<br>
+            想加入伺服器的人<br>
+            只要在Minecraft多人遊戲的直接連線的地方<br>
+            輸入馬賽克處的數字跟位置即可<br>
+            <br>
+            而如果你的電腦是固定ip<br>
+            你只需要直接讓你的朋友們在Minecraft多人遊戲的直接連線那邊<br>
+            輸入你的ipv4位址就可以連了喔～<br>
+            完全不須要hamachi！<br>
+            <br>
+            <span class="w3-xlarge">
+                〈其實原理一樣都是輸入伺服器端的ipv4位置 只是要是開伺服器的電腦是固定ip就不須要使用hamachi〉<br>
+            </span>
+            <br>
+            <img src="image/minecraft server/20210515_114647_mh1621050496693.jpg" style="max-width: 50vw;"><br>
+            如圖，加入伺服器後就完成了～～<br>
+            <br>
+        </div>
     </body>
 </html>

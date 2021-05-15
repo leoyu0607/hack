@@ -1,10 +1,237 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>分頁1</title>
+        <title>html教學</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
-    <body>
-        分頁1
+    <body class="w3-black">
+        <!--選單列-->
+        <div class="w3-top w3-bar w3-black w3-border w3-border-white w3-xlarge">
+            <div class="w3-bar-item w3-button w3-hover-black" onclick="window.location.href = '#install';">安裝VSCode</div>
+            <div class="w3-bar-item w3-button w3-hover-black" onclick="window.location.href = '#plugin';">VSCode推薦插件</div>
+            <div class="w3-bar-item w3-button w3-hover-black" onclick="window.location.href = '#html';">HTML</div>
+            <div class="w3-bar-item w3-button w3-hover-black" onclick="window.location.href = '#p';">段落</div>
+            <div class="w3-bar-item w3-button w3-hover-black" onclick="window.location.href = '#h';">標題</div>
+            <div class="w3-bar-item w3-button w3-hover-black" onclick="window.location.href = '#white-space';">white-space</div>
+            <div class="w3-bar-item w3-button w3-hover-black" onclick="window.location.href = '#emsp';">空格</div>
+            <div class="w3-bar-item w3-button w3-hover-black" onclick="window.location.href = '#br';">換行</div>
+            <div class="w3-bar-item w3-button w3-hover-black" onclick="window.location.href = '#!';">註解</div>
+            <div class="w3-bar-item w3-right w3-button w3-hover-black" onclick="window.location.href = '../HomePage.html';">回首頁</div>
+        </div>
+        <div class="w3-margin">
+            <br id="install"><br><br>
+            <!--安裝VSCode-->
+            <div class="w3-center w3-xxlarge w3-border w3-border-red w3-round-large w3-text-red">
+                <br>
+                安裝VSCode
+                <hr class="w3-border-red">
+                <div class="w3-margin">
+                    <div class="w3-button w3-hover-black" onclick="window.open('https://code.visualstudio.com/');">https://code.visualstudio.com/</div>
+                </div>
+            </div>
+            <br id="plugin"><br><br>
+            <!--VSCode插件-->
+            <div class="w3-xxlarge w3-border w3-border-orange w3-round-large w3-text-orange">
+                <br>
+                <div class="w3-center">VSCode推薦插件</div>
+                <hr class="w3-border-orange">
+                <div class="w3-margin w3-row">
+                    <div class="w3-padding" style="width: 50%;float: left;">
+                        HTML CSS Support<br>
+                        <hr>
+                        <img src="image/HTML CSS Support.png" style="width: 100%;">
+                    </div>
+                    <div class="w3-padding" style="width: 50%;float: right;">
+                        Live Server<br>
+                        <hr>
+                        <img src="image/Live Server.png" style="width: 100%;">
+                    </div>
+                    <div class="w3-padding w3-margin-top" style="width: 50%;float: left;">
+                        Auto Close Tag<br>
+                        <hr>
+                        <img src="image/Auto Close Tag.png" style="width: 100%;">
+                    </div>
+                    <div class="w3-padding w3-margin-top" style="width: 50%;float: right;">
+                        Auto Rename Tag<br>
+                        <hr>
+                        <img src="image/Auto Rename Tag.png" style="width: 100%;">
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+            <br id="html"><br><br>
+            <!--HTML-->
+            <div class="w3-xxlarge w3-border w3-border-yellow w3-round-large w3-text-yellow">
+                <br>
+                <div class="w3-center">HTML</div>
+                <hr class="w3-border-yellow">
+                <div class="w3-margin">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html&gt;<br>
+                    &emsp;&emsp;&lt;head&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;&lt;title&gt;<span class="w3-text-orange">網頁標題</span>&lt;/title&gt;<br>
+                    &emsp;&emsp;&lt;/head&gt;<br>
+                    &emsp;&emsp;&lt;body&gt;<br>
+                    &emsp;&emsp;&emsp;&emsp;<span class="w3-text-orange">網頁內容</span><br>
+                    &emsp;&emsp;&lt;/body&gt;<br>
+                    &lt;/html&gt;
+                </div>
+            </div>
+            <br id="p"><br><br>
+            <!--p-->
+            <div class="w3-xxlarge w3-border w3-border-light-green w3-round-large w3-text-light-green">
+                <br>
+                <div class="w3-center">段落Paragraph</div>
+                <hr class="w3-border-light-green">
+                <div class="w3-margin w3-row">
+                    <div class="w3-round-large w3-margin w3-padding" style="width: 47.5%;float: left;">
+                        <span class="w3-xlarge">程式碼</span><br>
+                        <hr class="w3-border-light-green">
+                        &lt;p&gt;段落Paragraph&lt;/p&gt;<br>
+                        &lt;p&gt;兩個p之間會換行&lt;/p&gt;<br>
+                    </div>
+                    <div class="w3-round-large w3-margin w3-padding" style="width: 47.5%;float: right;">
+                        <span class="w3-xlarge">網頁顯示結果</span><br>
+                        <hr class="w3-border-light-green">
+                        <p>段落Paragraph</p>
+                        <p>兩個p之間會換行</p>
+                    </div>
+                </div>
+            </div>
+            <br id="h"><br><br>
+            <!--h-->
+            <div class="w3-xxlarge w3-border w3-border-cyan w3-round-large w3-text-cyan">
+                <br>
+                <div class="w3-center">標題headings</div>
+                <hr class="w3-border-cyan">
+                <div class="w3-margin w3-row">
+                    <div class="w3-round-large w3-margin w3-padding" style="width: 47.5%;float: left;">
+                        <span class="w3-xlarge">程式碼</span><br>
+                        <hr class="w3-border-cyan">
+                        &lt;h1&gt;標題headings&lt;/h1&gt;<br>
+                        &lt;h2&gt;兩個h之間會換行&lt;/h2&gt;<br>
+                        &lt;h3&gt;共有6種大小不同的h&lt;/h3&gt;<br>
+                        &lt;h4&gt;從h1到h6&lt;/h4&gt;<br>
+                        &lt;h5&gt;數字越大，字體大小越小&lt;/h5&gt;<br>
+                        &lt;h6&gt;OuO&lt;/h6&gt;<br>
+                    </div>
+                    <div class="w3-round-large w3-margin w3-padding" style="width: 47.5%;float: right;">
+                        <span class="w3-xlarge">網頁顯示結果</span><br>
+                        <hr class="w3-border-cyan">
+                        <h1>標題headings</h1>
+                        <h2>兩個h之間會換行</h2>
+                        <h3>共有6種大小不同的h</h3>
+                        <h4>從h1到h6</h4>
+                        <h5>數字越大，字體大小越小</h5>
+                        <h6>OuO</h6>
+                    </div>
+                </div>
+            </div>
+            <br id="white-space"><br><br>
+            <!--white-space-->
+            <div class="w3-xxlarge w3-border w3-border-blue w3-round-large w3-text-blue">
+                <br>
+                <div class="w3-center">white-space</div>
+                <hr class="w3-border-blue">
+                <div class="w3-margin w3-row">
+                    HTML裡的連續多個空白和換行都會被視為只有一個空白<br>
+                    <div class="w3-round-large w3-margin w3-padding" style="width: 47.5%;float: left;">
+                        <span class="w3-xlarge">程式碼</span><br>
+                        <hr class="w3-border-blue">
+                        &lt;p&gt;<br>
+                        &emsp;&emsp;空&emsp;&emsp;&emsp;白<br>
+                        &lt;/p&gt;<br>
+                        &lt;p&gt;<br>
+                        &emsp;&emsp;換<br>
+                        &emsp;&emsp;行<br>
+                        &lt;/p&gt;<br>
+                    </div>
+                    <div class="w3-round-large w3-margin w3-padding" style="width: 47.5%;float: right;">
+                        <span class="w3-xlarge">網頁顯示結果</span><br>
+                        <hr class="w3-border-blue">
+                        <p>
+                            空      白
+                        </p>
+                        <p>
+                            換
+                            行
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br id="emsp"><br><br>
+            <!--emsp-->
+            <div class="w3-xxlarge w3-border w3-border-purple w3-round-large w3-text-purple">
+                <br>
+                <div class="w3-center">&amp;emsp; &amp;ensp; &amp;nbsp;</div>
+                <hr class="w3-border-purple">
+                <div class="w3-margin w3-row">
+                    &amp;emsp;	全形空格（一個中文字的寬度）<br>
+                    &amp;ensp;	半形空格（半個中文字的寬度）<br>
+                    &amp;nbsp;	半形不換行空格（空白鍵打出來的空格）<br>
+                    <div class="w3-round-large w3-margin w3-padding" style="width: 47.5%;float: left;">
+                        <span class="w3-xlarge">程式碼</span><br>
+                        <hr class="w3-border-purple">
+                        &lt;p&gt;emsp&amp;emsp;全形空格&lt;/p&gt;
+                        &lt;p&gt;ensp&amp;ensp;半形空格&lt;/p&gt;
+                        &lt;p&gt;nbsp&amp;nbsp;半形不換行空格&lt;/p&gt;
+                    </div>
+                    <div class="w3-round-large w3-margin w3-padding" style="width: 47.5%;float: right;">
+                        <span class="w3-xlarge">網頁顯示結果</span><br>
+                        <hr class="w3-border-purple">
+                        <p>emsp&emsp;全形空格</p>
+                        <p>ensp&ensp;半形空格</p>
+                        <p>nbsp&nbsp;半形不換行空格</p>
+                    </div>
+                </div>
+            </div>
+            <br id="br"><br><br>
+            <!--br-->
+            <div class="w3-xxlarge w3-border w3-border-pink w3-round-large w3-text-pink">
+                <br>
+                <div class="w3-center">換行br</div>
+                <hr class="w3-border-pink">
+                <div class="w3-margin w3-row">
+                    <div class="w3-round-large w3-margin w3-padding" style="width: 47.5%;float: left;">
+                        <span class="w3-xlarge">程式碼</span><br>
+                        <hr class="w3-border-pink">
+                        &lt;p&gt;br&lt;br&gt;換行&lt;/p&gt;
+                    </div>
+                    <div class="w3-round-large w3-margin w3-padding" style="width: 47.5%;float: right;">
+                        <span class="w3-xlarge">網頁顯示結果</span><br>
+                        <hr class="w3-border-pink">
+                        <p>br<br>換行</p>
+                    </div>
+                </div>
+            </div>
+            <br id="!"><br><br>
+            <!--註解-->
+            <div class="w3-xxlarge w3-border w3-border-red w3-round-large w3-text-red">
+                <br>
+                <div class="w3-center">註解</div>
+                <hr class="w3-border-red">
+                <div class="w3-margin w3-row">
+                    <div class="w3-round-large w3-margin w3-padding" style="width: 47.5%;float: left;">
+                        <span class="w3-xlarge">程式碼</span><br>
+                        <hr class="w3-border-red">
+                        &lt;!--註解--&gt;<br>
+                        &lt;!--網頁上看不到--&gt;
+                    </div>
+                    <div class="w3-round-large w3-margin w3-padding" style="width: 47.5%;float: right;">
+                        <span class="w3-xlarge">網頁顯示結果</span><br>
+                        <hr class="w3-border-red">
+                        <!--註解-->
+                        <!--網頁上看不到-->
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <!--To Be Continue-->
+            <div class="w3-xxlarge w3-border w3-border-orange w3-round-large w3-text-orange">
+                <div class="w3-center w3-margin">To Be Continue</div>
+            </div>
+            <br>
+        </div>
     </body>
 </html>
