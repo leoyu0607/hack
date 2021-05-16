@@ -16,7 +16,7 @@
  ## 技術
  - HTML
  - CSS
- - JavaScrit
+ - JavaScript
  
  ## 使用方法
  1. 打開瀏覽器
