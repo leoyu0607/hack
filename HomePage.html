@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>首頁</title>
+        <title>多元教學平台</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            img
+            {
+                width: 300px;
+            }
+            .height
+            {
+                height: 55vh;
+            }
+        </style>
     </head>
-    <body>
-        <a href="Page/Page1.html">Page1</a>
-        <a href="Page/Page2.html">Page2</a>
-        <a href="Page/Page3.html">Page3</a>
+    <body class="w3-grey">
+        <div class="w3-black w3-center w3-jumbo">
+            <br>
+            <span id="title">多元教學平台</span><br>
+            <br>
+        </div>
+        <div class="w3-row w3-center w3-xlarge w3-padding">
+            <div class="w3-third height w3-light-green w3-text-black w3-padding" onmouseover="textChange('HTML');" onmouseout="textChange();" onclick="window.location.href='Page/Page1.html';">
+                <div class="w3-xxlarge">HTML</div>
+                <img src="https://cdn2.iconfinder.com/data/icons/social-icon-3/512/social_style_3_html5-512.png">
+            </div>
+            <div class="w3-third height w3-white w3-text-black" onmouseover="textChange('MINECRAFT');" onmouseout="textChange();" onclick="window.location.href='Page/Page2.html';">
+                <div class="w3-xxlarge">MINECRAFT SERVER</div>
+                <img src="https://pht.qoo-static.com/VSwHQjcAttxsLE47RuS4PqpC4LT7lCoSjE7Hx5AW_yCxtDvcnsHHvm5CTuL5BPN-uRTP=w512">
+            </div>
+            <div class="w3-third height w3-light-blue w3-text-black" onmouseover="textChange('VTUBER');" onmouseout="textChange();" onclick="window.location.href='Page/Page3.html';">
+                <div class="w3-xxlarge">VTUBER</div>
+                <img src="https://pbs.twimg.com/profile_images/1148449780533612544/R4vlBkQZ.png">
+            </div>
+        </div>
+        <script>
+            function textChange(s="多元教學平台")
+            {
+                title = document.getElementById("title");
+                title.innerText = s;
+            }
+        </script>
     </body>
 </html>
